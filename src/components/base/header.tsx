@@ -62,7 +62,7 @@ export default function Header() {
             </NavigationMenu>
           </div>
           <div>
-            <Button size="icon" asChild>
+            <Button variant="secondary" size="icon" asChild>
               <a href="http://github.com/pezexd/cg-blog" target="_blank">
                 <SimpleIconsGithub />
               </a>
