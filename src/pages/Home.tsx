@@ -1,4 +1,5 @@
 import { Text } from "@/components/ui/text";
+import { Link } from "react-router";
 
 export default function Home() {
   return (
@@ -14,6 +15,14 @@ export default function Home() {
             llevar tus habilidades en computación gráfica al siguiente nivel.
           </Text>
         </div>
+      </div>
+      <div className="mt-8">
+        <h1>Posts</h1>
+        <ul>
+          <li>
+            <Link to="/algoritmo-generacion-elipse">Ellipse</Link>
+          </li>
+        </ul>
       </div>
     </>
   );
