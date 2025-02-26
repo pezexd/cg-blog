@@ -4,7 +4,7 @@ import { Link } from "react-router";
 export default function Home() {
   return (
     <>
-      <div className="py-24 sm:py-32">
+      <div className="py-24 sm:py-24">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <Text variant="h1">
             El blog de computación gráfica para estudiantes de ingeniería
@@ -17,13 +17,24 @@ export default function Home() {
         </div>
       </div>
       <div className="mt-8">
-        <h1>Posts</h1>
-        <ul>
-          <li>
-            <Link to="/algoritmo-generacion-elipse">Ellipse</Link>
+        <Text variant={"h2"}>Posts</Text>
+
+        <ul className="mt-8">
+          <li className="w-60 h-60 rounded-md shadow-md p-4">
+            <Link to="/posts/elipse">
+              <figure>
+                <img src="/Ellipse-def-e.svg.png" alt="elipse" />
+              </figure>
+              <Text variant={"h4"}>Elipse</Text>
+              <p>Todo sobre las elipses</p>
+            </Link>
           </li>
         </ul>
       </div>
+
+      <footer className="py-6 text-center">
+        Todos los derechos reservados 
+      </footer>
     </>
   );
 }

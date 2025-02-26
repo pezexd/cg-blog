@@ -9,7 +9,24 @@ export default function ElipsePage() {
   const ecuacion = `\\(\\frac{x^2 + h}{a^2} + \\frac{y^2 + k}{b^2} = 1\\)`;
   return (
     <>
-      <section className="text-neutral-900 px-56 text-xl">
+      <section className="py-24 sm:py-24 flex items-center max-md:flex-col justify-between">
+        <div className="mx-auto max-w-2xl lg:mx-0">
+          <Text variant="h1">
+            Algoritmo de generación de elipse
+          </Text>
+          <Text variant="p" className="mt-8">
+            En este artículo, exploraremos cómo se genera una elipse
+            computacionalmente, qué propiedades y características tiene, y cómo
+            implementar su algoritmo de generación en C++.
+          </Text>
+        </div>
+
+        <figure>
+          <img src="/Ellipse-def-dc.svg.png" alt="elipse" className="w-[80%] mx-auto" />
+        </figure>
+      </section>
+
+      <section className="text-neutral-900 lg:px-56 2xl:px-20 text-xl">
         <Text variant={"h2"} className="text-center">
           ¿Qué es una Elipse?
         </Text>
@@ -197,6 +214,10 @@ export default function ElipsePage() {
           <img src="/tl.webp" alt="guy" className="w-[40%] mx-auto" />
         </figure>
       </section>
+
+      <footer className="text-lg py-16 text-center">
+        Gracias por su atencion
+      </footer>
     </>
   );
 }
