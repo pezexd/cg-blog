@@ -20,7 +20,7 @@ export default function Home() {
         <Text variant={"h2"}>Posts</Text>
 
         <ul className="mt-8">
-          <li className="w-60 h-60 rounded-md shadow-md p-4">
+          <li className="bg-white w-60 h-60 rounded-md shadow-md p-4">
             <Link to="/posts/elipse">
               <figure>
                 <img src="/Ellipse-def-e.svg.png" alt="elipse" />

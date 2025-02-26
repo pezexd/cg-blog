@@ -41,15 +41,20 @@ export default function ElipsePage() {
 
         <Text variant={"h5"}>
           Propiedades de la elipse:
-          <Text variant={"blockquote"}>
-            ● La suma de las distancias desde cualquier punto sobre la elipse
-            hasta dos puntos fijos llamados focos es constante.
-          </Text>
-          <Text variant={"blockquote"}>
-            ● Los dos ejes son perpendiculares entre sí.
-          </Text>
-          <Text variant={"blockquote"}>
-            ● La elipse tiene dos focos ubicados en el eje mayor.
+
+          <Text variant={"ul"}>
+            <li>
+              La suma de las distancias desde cualquier punto sobre la elipse
+              hasta dos puntos fijos llamados focos es constante.
+            </li>
+
+            <li>
+              Los dos ejes son perpendiculares entre sí.
+            </li>
+
+            <li>
+              La elipse tiene dos focos ubicados en el eje mayor.
+            </li>
           </Text>
         </Text>
 
@@ -73,24 +78,29 @@ export default function ElipsePage() {
           de gráficos en tiempo real
         </Text>
 
-        <Text variant={"h5"}>Las características clave del algoritmo son:</Text>
+        <Text variant={"h5"}>
+          Las características clave del algoritmo son:
 
-        <Text variant={"blockquote"}>
-          ● Eficiencia: Utiliza una serie de decisiones para trazar puntos en la
-          elipse.
+          <Text variant={"ul"}>
+            <li>
+              <strong>Eficiencia:</strong> Utiliza una serie de decisiones para trazar puntos en la
+              elipse.
+            </li>
+
+            <li>
+              <strong>Simetría:</strong> Aprovecha la simetría de la elipse, lo que significa que
+              si trazamos un punto en un cuadrante, podemos reflejarlo en los otros
+              tres cuadrantes.
+            </li>
+
+            <li>
+              <strong>Iteración eficiente:</strong> Permite calcular los puntos de la elipse de
+              forma iterativa sin necesidad de realizar operaciones costosas como
+              raíces cuadradas.
+            </li>
+          </Text>
         </Text>
 
-        <Text variant={"blockquote"}>
-          ● Simetría: Aprovecha la simetría de la elipse, lo que significa que
-          si trazamos un punto en un cuadrante, podemos reflejarlo en los otros
-          tres cuadrantes.
-        </Text>
-
-        <Text variant={"blockquote"}>
-          ● Iteración eficiente: Permite calcular los puntos de la elipse de
-          forma iterativa sin necesidad de realizar operaciones costosas como
-          raíces cuadradas.
-        </Text>
 
         <Text variant={"h4"} className="mt-16 text-center">
           Algoritmo de Generación de Elipse en C++
@@ -213,6 +223,64 @@ export default function ElipsePage() {
           />
           <img src="/tl.webp" alt="guy" className="w-[40%] mx-auto" />
         </figure>
+
+        <Text variant={"h5"} className="pt-12">
+          Ventajas del Algoritmo de Generación de Elipses: 
+          <Text variant={"ul"}>
+            <li>
+              <strong>Eficiencia computacional:</strong> El algoritmo de Bresenham no requiere
+              operaciones costosas, como divisiones o raíces cuadradas, lo que lo
+              hace rápido y adecuado para gráficos en tiempo real.
+            </li>
+
+            <li>
+              <strong>Simplicidad:</strong> El algoritmo es relativamente fácil de implementar y
+              entender.
+            </li>
+
+            <li>
+              <strong>Simetría:</strong> Aprovecha la simetría de la elipse, lo que reduce la cantidad
+              de cálculos necesarios.
+            </li>
+          </Text>
+        </Text>
+
+        <Text variant={"h5"}>
+          Limitaciones del Algoritmo: 
+          <Text variant={"ul"}>
+            <li>
+              <strong>Precisión:</strong> Si bien el algoritmo es eficiente, la precisión de los puntos
+              generados puede ser limitada por la resolución de la pantalla o el área
+              de dibujo.
+            </li>
+
+            <li>
+              <strong>Uso en elipses muy inclinadas:</strong> Aunque es adecuado para elipses
+              centradas en el origen, las elipses rotadas o inclinadas requieren
+              transformaciones adicionales, lo que complica el algoritmo.
+            </li>
+
+            <li>
+              <strong>Dependencia del hardware:</strong> El rendimiento puede variar dependiendo de
+              la capacidad del hardware gráfico y la implementación de la función
+              putpixel.
+            </li>
+          </Text>
+        </Text>
+
+        <Text variant={"h4"} className="text-center mt-12">
+          Conclusión
+        </Text>
+
+        <Text variant={"p"} >
+          El algoritmo de generación de elipses, especialmente el basado en
+          Bresenham, es una herramienta poderosa en la computación gráfica. Su
+          eficiencia y simplicidad lo convierten en un componente esencial en muchas
+          aplicaciones, desde simulaciones hasta gráficos en tiempo real. Sin embargo,
+          como todo algoritmo, tiene sus limitaciones, especialmente cuando se trata de
+          precisión o el manejo de elipses no centradas en el origen.
+        </Text>
+
       </section>
 
       <footer className="text-lg py-16 text-center">
