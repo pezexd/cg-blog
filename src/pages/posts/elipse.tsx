@@ -39,10 +39,7 @@ export default function ElipsePage() {
                   𝑥 y 𝑦: Son las coordenadas de un punto cualquiera en la
                   elipse.
                 </li>
-                <li>
-                  ℎ y 𝑘: Son las coordenadas de un punto cualquiera en la
-                  elipse.
-                </li>
+                <li>ℎ y 𝑘: Son las coordenadas del centro de la elipse</li>
                 <li>
                   𝑎: Es la longitud del semieje mayor, que es la distancia desde
                   el centro de la elipse hasta el punto más lejano en el eje
