@@ -18,7 +18,7 @@ export default function Home() {
       </div>
       <div className="mt-8">
         <Text variant={"h2"}>Posts</Text>
-        <div className="mt-6 grid grid-cols-3 gap-6">
+        <div className="mt-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
           <HomePostList />
         </div>
       </div>
