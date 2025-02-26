@@ -1,10 +1,10 @@
+import HomePostList from "@/components/home/post-list";
 import { Text } from "@/components/ui/text";
-import { Link } from "react-router";
 
 export default function Home() {
   return (
     <>
-      <div className="py-24 sm:py-24">
+      <div className="py-24">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <Text variant="h1">
             El blog de computación gráfica para estudiantes de ingeniería
@@ -18,23 +18,10 @@ export default function Home() {
       </div>
       <div className="mt-8">
         <Text variant={"h2"}>Posts</Text>
-
-        <ul className="mt-8">
-          <li className="bg-white w-60 h-60 rounded-md shadow-md p-4">
-            <Link to="/posts/elipse">
-              <figure>
-                <img src="/Ellipse-def-e.svg.png" alt="elipse" />
-              </figure>
-              <Text variant={"h4"}>Elipse</Text>
-              <p>Todo sobre las elipses</p>
-            </Link>
-          </li>
-        </ul>
+        <div className="mt-6 grid grid-cols-3 gap-6">
+          <HomePostList />
+        </div>
       </div>
-
-      <footer className="py-6 text-center">
-        Todos los derechos reservados 
-      </footer>
     </>
   );
 }
