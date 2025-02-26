@@ -12,7 +12,6 @@ import { Button } from "../ui/button";
 import { SimpleIconsGithub } from "../icons/SimpleIconsGithub";
 import { NavLink, useMatch, useResolvedPath } from "react-router";
 
-
 const Link = ({ label, to }: { label: string; to: string }) => {
   const resolved = useResolvedPath(to);
   const match = useMatch({ path: resolved.pathname, end: true });
@@ -25,9 +24,8 @@ const Link = ({ label, to }: { label: string; to: string }) => {
 };
 
 export default function Header() {
-
   return (
-    <header className="fixed top-0 left-0 w-full bg-transparent">
+    <header className="fixed z-30 top-0 left-0 w-full bg-transparent">
       <Container>
         <nav
           aria-label="Global"
@@ -58,7 +56,6 @@ export default function Header() {
           </div>
         </nav>
       </Container>
-      
     </header>
   );
 }
