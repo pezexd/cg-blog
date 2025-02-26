@@ -1,5 +1,5 @@
 import { Text } from "@/components/ui/text";
-import { code } from "../../utils/code";
+import { code, pythonCode } from "../../utils/elipse";
 import Latex from "react-latex-next";
 import "katex/dist/katex.min.css";
 import { CodeBlock } from "@/components/ui/code-block";
@@ -174,6 +174,12 @@ export default function ElipsePage() {
                   <Text variant={"code"}>y</Text>.
                 </Text>
               </Text>
+
+              <Text variant={"h4"} className="mt-8 text-center mb-8">
+                Algoritmo de Generación de Elipse en Python
+              </Text>
+
+              <CodeBlock language="py" filename="main.py" code={pythonCode} />
 
               <article className="text-end mt-12">
                 <video src="/test.mp4" controls={true}></video>
